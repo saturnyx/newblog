@@ -1,0 +1,10 @@
+$header_font: "3270 Nerd Font";
+$h1_size: 3em;
+$h2_size: 2.5em;
+$h3_size: 2em;
+$h4_size: 1.5em;
+
+h1 {
+    font-family: $header_font;
+    font-size: $h1_size;
+}
