@@ -1,0 +1,20 @@
+$title_size: 3.5em;
+
+@import "theme";
+
+.title {
+    font-size: $title_size;
+    padding: 0 30vw;
+}
+
+.subtitle {
+    padding: 0 30vw;
+}
+
+.banner {
+    left: 0;
+    right: 0;
+    background-color: $surface;
+    outline: 1px solid  $outline;
+    padding: 1em;
+}

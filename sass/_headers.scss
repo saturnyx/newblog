@@ -1,10 +1,45 @@
 $header_font: "3270 Nerd Font";
-$h1_size: 3em;
-$h2_size: 2.5em;
-$h3_size: 2em;
-$h4_size: 1.5em;
+$h1_size: 3rem;
+$h2_size: 2.5rem;
+$h3_size: 2rem;
+$h4_size: 1.5rem;
+
+h1,
+h2,
+h3,
+h4 {
+  font-family: $header_font;
+  margin-bottom: 0;
+}
 
 h1 {
-    font-family: $header_font;
-    font-size: $h1_size;
+  font-size: $h1_size;
+}
+h2 {
+  font-size: $h2_size;
+  margin-bottom: 0.2 em;
+}
+h3 {
+  font-size: $h3_size;
+}
+h4 {
+  font-size: $h4_size;
+}
+
+@media (min-width: 768px) {
+  :is(h1, h2, h3):not(.title) {
+    &::before {
+      content: "\1F7C6";
+      position: absolute;
+      left: calc(30vw - 1.5em);
+      display: inline-block;
+      transform: rotateZ(0deg) translate(0, 0) scale(0.8);
+      transition: transform 0.4s ease;
+      color: var(--text-color);
+    }
+
+    &:hover::before {
+      transform: rotateZ(90deg) translate(-5%, 5%) scale(1);
+    }
+  }
 }
