@@ -1,4 +1,4 @@
-$header_font: "3270 Nerd Font";
+$header_font: "Manrope";
 $h1_size: 3rem;
 $h2_size: 2.5rem;
 $h3_size: 2rem;
@@ -10,6 +10,8 @@ h3,
 h4 {
   font-family: $header_font;
   margin-bottom: 0;
+  color: $foreground;
+  letter-spacing: -0.05em;
 }
 
 h1 {
@@ -28,18 +30,23 @@ h4 {
 
 @media (min-width: 768px) {
   :is(h1, h2, h3):not(.title) {
-    &::before {
-      content: "\1F7C6";
-      position: absolute;
-      left: calc(30vw - 1.5em);
-      display: inline-block;
-      transform: rotateZ(0deg) translate(0, 0) scale(0.8);
-      transition: transform 0.4s ease;
-      color: var(--text-color);
-    }
+      &::before {
+        content: "\1F7C6";
+        position: absolute;
+        left: calc(30vw - 1.5em);
+        display: inline-block;
+        width: 1.5em;
+        height: 1.5em;
+        line-height: 1.5em;
+        text-align: center;
+        transform-origin: center;
+        transform: rotateZ(0deg) scale(0.8);
+        transition: transform 0.4s ease;
+        color: var(--text-color);
+      }
 
     &:hover::before {
-      transform: rotateZ(90deg) translate(-5%, 5%) scale(1);
+      transform: rotateZ(90deg) translate(-0%, 0%) scale(1);
     }
   }
 }
