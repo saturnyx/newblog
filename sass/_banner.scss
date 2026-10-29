@@ -1,8 +1,8 @@
 @import "theme";
 
 .title {
+    margin-top: 0;
     font-size: $title_size;
-    padding: 0 30vw;
 }
 
 .description {
@@ -13,10 +13,6 @@
 
 .meta {
     margin: 0 30vw;
-    display: flex;
-    justify-content: space-between;
-    align-items: baseline;
-    gap: 1rem;
 }
 
 .banner {
@@ -24,5 +20,5 @@
     right: 0;
     background-color: $surface;
     outline: 1px solid  $outline;
-    padding: 1em;
+    padding: 1em 0;
 }

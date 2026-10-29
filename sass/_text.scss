@@ -8,29 +8,27 @@ p {
 .date {
   position: relative;
   display: inline-block;
-  text-align: right;
+  text-align: left;
   white-space: nowrap;
   box-shadow: inset 0 0 0 1px $foreground;
   padding-block: 0.2em;
-
+  margin-bottom: 0;
 
   .short {
     color: $foreground;
     padding-inline: 0.5em;
-    clip-path: inset(0 0 0 0);
-    transition: clip-path 0.5s ease 0s;
   }
 
   .long {
     position: absolute;
-    right: 0;
+    left: 0;
     top: 0;
     white-space: nowrap;
     background-color: $foreground;
-    color: $background;
+    color: $surface;
     padding-inline: 0.5em;
     padding-block: 0.2em;
-    clip-path: inset(0 0 0 100%);
+    clip-path: inset(0 100% 0 0);
     pointer-events: none;
     transition: clip-path 0.5s ease;
 
