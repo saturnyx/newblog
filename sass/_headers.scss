@@ -1,31 +1,25 @@
-$header_font: "Manrope";
-$h1_size: 3rem;
-$h2_size: 2.5rem;
-$h3_size: 2rem;
-$h4_size: 1.5rem;
-
 h1,
 h2,
 h3,
 h4 {
-  font-family: $header_font;
+  font-family: $prop-font;
   margin-bottom: 0;
   color: $foreground;
   letter-spacing: -0.05em;
 }
 
 h1 {
-  font-size: $h1_size;
+  font-size: $h1-size;
 }
 h2 {
-  font-size: $h2_size;
+  font-size: $h2-size;
   margin-bottom: 0.2 em;
 }
 h3 {
-  font-size: $h3_size;
+  font-size: $h3-size;
 }
 h4 {
-  font-size: $h4_size;
+  font-size: $h4-size;
 }
 
 @media (min-width: 768px) {
@@ -33,7 +27,7 @@ h4 {
       &::before {
         content: "\1F7C6";
         position: absolute;
-        left: calc(30vw - 1.5em);
+        left: calc(#{$side-padding} - 1.5rem - 1em);
         display: inline-block;
         width: 1.5em;
         height: 1.5em;

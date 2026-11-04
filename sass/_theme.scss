@@ -6,4 +6,12 @@ $outline: hsla(167, 14%, 54%, 50%);
 
 $prop-font: "Manrope";
 $mono-font: "Jetbrains Mono";
-$title_size: 3.5em;
+
+$font-size:  calc(5.8rem - 5vw);
+$title-size: calc(#{$font-size} + 3rem);
+$h1-size: calc(#{$font-size} + 2rem);
+$h2-size: calc(#{$font-size} + 1.5rem);
+$h3-size: calc(#{$font-size} + 1rem);
+$h4-size: calc(#{$font-size} + 0.5rem);
+$blog-width: calc(65rem - 30vw);
+$side-padding: calc((100vw - #{$blog-width}) / 2);
