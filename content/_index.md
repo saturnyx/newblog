@@ -1,6 +1,6 @@
 +++
 title = "Harshal's Blog"
-template = "blog.html"
+template = "section.html"
 description = "a.k.a. @saturnyx"
 +++
 
