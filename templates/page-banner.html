@@ -1,5 +1,12 @@
 <div class="banner">
     <div class="meta">
+    {% if page.ancestors %}
+        {% set parent = get_section(path=page.ancestors | reverse | first) %}
+        <a class="button" href="{{ parent.permalink | safe }}">
+            <span class="short">Back</span>
+            <span class="long">To Blog List</span>
+        </a>
+    {% endif %}
     {% if page.date %}
     <p class="date">
       <span class="short">{{ page.date | date(format="%d · %m · %y") }}</span>
