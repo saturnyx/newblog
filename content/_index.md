@@ -1,7 +1,9 @@
 +++
-title = "Harshal's Blog"
+title = "My Blog Posts!"
+description = "Hi there! Looking for a post?"
+sort_by = "date"
 template = "section.html"
-description = "a.k.a. @saturnyx"
+page_template = "page.html"
 +++
 
-Hi, I am harshal. [Look at my blogs](blog)
+My new and improved blog site, made with [Zola](https://www.getzola.org/)
