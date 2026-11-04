@@ -1,3 +1,17 @@
+@font-face {
+  font-family: "Manrope";
+  src: url("/manrope.woff2") format("woff2");
+  font-display: swap;
+  font-weight: 200 800;
+}
+
+@font-face {
+  font-family: "Victor Mono";
+  src: url("/victor-mono.ttf") format("truetype");
+  font-display: swap;
+  font-weight: 500;
+}
+
 $foreground: hsl(168, 11%, 82%);
 $background: hsl(168, 100%, 5%);
 $surface: hsl(168, 100%, 10%);
@@ -5,7 +19,7 @@ $outline: hsla(167, 14%, 54%, 50%);
 
 
 $prop-font: "Manrope";
-$mono-font: "Jetbrains Mono";
+$mono-font: "Victor Mono";
 
 $font-size:  calc(5.8rem - 5vw);
 $title-size: calc(#{$font-size} + 3rem);

@@ -22,6 +22,10 @@ li {
 
 }
 
+code {
+    font-family: $mono-font;
+}
+
 pre.giallo {
   margin-block: 0.75em;
   padding: 0.75em 1em;
@@ -30,6 +34,7 @@ pre.giallo {
   overflow: auto;
   outline: 1px solid $outline;
   background-color: $surface !important;
+  font-family: $mono-font !important;
   font-size: $font-size;
   line-height: 1.2;
   transition: width 0.5s ease, margin-left 0.5s ease;
