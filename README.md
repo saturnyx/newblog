@@ -1,68 +1,40 @@
-# My New Blog
+# [My Blog](https://blog.saturnyx.org)
 
-This is the source code for my personal blog. It is intentionally small: Zola
-builds the site, Sass handles the styling, and Markdown is all I need to write
-new posts.
+This is my blog that uses [Zola](https://www.getzola.org). View the blog [here](https://blog.saturnyx.org).
 
-The site is still a work in progress, so the design and content will continue
-to change.
+## Directory Structure:
 
-## Built with
+```
+├── content (blog posts)
+├── sass (sassy style sheets)
+├── static (fonts)
+├── templates (html templates)
+└── themes (empty)
+```
 
-- [Zola](https://www.getzola.org/) for generating the site
-- [Tera](https://keats.github.io/tera/) templates for the page structure
-- Sass for the stylesheets
-- Markdown for blog posts
+## Usage and Building
 
-## Run it locally
+> I highly recommend that you make your own blog instead of copying my own blog. You may copy the theme, but do not attempt to impersonate me.
 
-Install Zola, then start the development server from the project directory:
+Firstly, to use the blog, you need zola:
 
-```sh
+```
+cargo install zola
+```
+or
+```
+cargo binstall zola
+```
+
+Next, clone the repository and run:
+```
 zola serve
 ```
+You can view the blog at [http://127.0.0.1:1111](http://127.0.0.1:1111).
 
-Open <http://127.0.0.1:1111> in your browser. Zola will rebuild the site as
-files change.
+## AI Usage
 
-To create a production build:
-
-```sh
-zola build
-```
-
-The generated site is written to `public/`.
-
-## Writing a post
-
-Create a Markdown file in `content/`. A post needs front matter at the top,
-for example:
-
-```md
-+++
-title = "A Small First Post"
-date = 2026-01-01
-+++
-
-Write the post here.
-```
-
-The section configuration in `content/_index.md` sorts posts by date.
-
-## Project layout
-
-```text
-content/     Blog posts and section configuration
-sass/        Sass source files
-templates/   Zola page and section templates
-static/      Static assets copied to the built site
-zola.toml   Site and Markdown configuration
-```
-
-## Deployment
-
-Every push to `main` builds the site with Zola and deploys it to GitHub Pages
-using the workflow in `.github/workflows/zola.yml`.
+Usage of AI models in the intent to code this blog is minimal (<70%). It is mainly used for documentation and stylesheet generation. AI prompts given were highly specific.
 
 ## License
 
