@@ -1,6 +1,6 @@
 +++
-title = "My test post"
-date = 2026-11-02
+title = "My Test Post"
+date = 1969-07-20
 description = "This is a test post!"
 +++
 
