@@ -32,6 +32,10 @@ zola serve
 ```
 You can view the blog at [http://127.0.0.1:1111](http://127.0.0.1:1111).
 
+## Using Github Actions:
+
+The repo bundles a simple github action that can be used to deploy the website directly on Github.
+
 ## AI Usage
 
 Usage of AI models in the intent to code this blog is minimal (<70%). It is mainly used for documentation and stylesheet generation. AI prompts given were highly specific.
