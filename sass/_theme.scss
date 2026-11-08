@@ -7,9 +7,9 @@
 
 @font-face {
   font-family: "Victor Mono";
-  src: url("/victor-mono.ttf") format("truetype");
+  src: url("/victor-mono.woff2") format("woff2");
   font-display: swap;
-  font-weight: 500;
+  font-weight: 100 700;
 }
 
 $foreground: hsl(168, 11%, 82%);
