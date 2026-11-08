@@ -14,6 +14,33 @@ ol {
   padding-inline-start: 1.5em;
 }
 
+table {
+  display: block;
+  width: 100%;
+  margin-block: 0.75em;
+  overflow-x: auto;
+  border-collapse: collapse;
+  color: $foreground;
+  font-family: $prop-font;
+  font-size: $font-size;
+}
+
+th,
+td {
+  padding: 0.4em 0.75em;
+  border: 1px solid $outline;
+  text-align: left;
+  white-space: nowrap;
+  font-weight: 400;
+}
+
+td:has(strong),
+th:has(strong)
+{
+    background-color: $surface;
+    font-weight: 400;
+}
+
 li {
   padding-inline-start: 0.25em;
   &::marker {
