@@ -37,5 +37,6 @@ valuable.
 
 > #### How this blog was written...
 >
-> I wrote this blog page in August 16 in 2025, when I made my original jekyll
-> blog. Now, I have tranferred it
+> I wrote this blog page in August 16 in 2025, when I made my original
+> [Jekyll](https://https://jekyllrb.com/) blog. Now, I have transferred it to my
+> new [Zola](https://www.getzola.org)-based blog.
